@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surplus Share</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    body {
+  padding-top: 56px;
+}
+
+.hero-part .img{
+  flex: 1;             
+  max-width: 500px;     
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #000; 
+  color: #fff;            
+  box-shadow: none;       
+}
+
+  </style>
+
+  </head>
+<body>
+ 
+<nav class="navbar navbar-expand-lg bg-success fixed-top border-bottom border-white">
+  <div class="container ">
+
+    <a class="navbar-brand fw-bold  text-white" href="#">Surplus Serve</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item ">
+          <a class="nav-link active text-white" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#about">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#impact">Impact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#faq">FAQ's</a>
+        </li>
+      </ul>
+
+<button class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#donateModal">
+  Donate
+</button>
+
+    </div>
+  </div>
+</nav>
+
+<!-- Donate Modal -->
+<div class="modal fade" id="donateModal" tabindex="-1" aria-labelledby="donateModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="donateModalLabel">Donate to Surplus Share</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="donorName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="donorName" placeholder="Enter your name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="donorPhone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="donorPhone" placeholder="Enter your phone" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="donorEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="donorEmail" placeholder="Enter your email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="donationAmount" class="form-label">Donation Amount</label>
+            <input type="number" class="form-control" id="donationAmount" placeholder="Enter amount" required>
+          </div>
+
+      <button type="button" class="btn btn-success w-100" data-bs-dismiss="modal">Submit</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="hero-part bg-success text-white d-flex  flex-column flex-lg-row  justify-content-between align-items-center p-1 p-lg-5" id="home">
+
+  <div class="img-text ms-3 me-5 text-center">
+    <h1 class="fw-bold">Small Changes do change the future better</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ex iure dignissimos fugit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt recusandae rerum commodi atque, totam natus! Consequuntur error dignissimos ipsa nam. perferendis voluptate, corporis aperiam quasi esse architecto.</p>
+    <button class="btn btn-warning mb-4" type="button" data-bs-toggle="modal" data-bs-target="#donateModal">
+      Donate Now !!!
+    </button>
+  </div>
+
+  <div class="img">
+
+    <img src="./images/img5.jpg" class="image-fluid rounded w-280 w-lg-500" style="object-fit: cover;" width="290px"  height="250px" alt="">
+
+</div>
+
+</div>
+
+    <div class="card-section d-flex justify-content-evenly gap-3 align-items-center flex-column flex-lg-row pt-5 pb-5 bg-info-subtle">
+      <div class="card  d-flex flex-column align-items-center" style="width: 18rem;">
+      <img src="https://img.icons8.com/?size=100&id=L0jq4mU3Zw8r&format=png&color=000000" style="width: 50px; height: 60px; object-fit: cover;" class="card-img-top pt-4" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold fs-1 text-center">500+</h5>
+        <p class="card-text">Meals Distributed</p>
+      </div>
+    </div>
+
+      <div class="card  d-flex flex-column align-items-center" style="width: 18rem;">
+      <img src="https://img.icons8.com/?size=100&id=6NZgzBp13dcs&format=png&color=000000" style="width: 50px; height: 60px; object-fit: cover;" class="card-img-top pt-4" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold fs-1 text-center">50+</h5>
+        <p class="card-text">Active NGO's</p>
+      </div>
+    </div>
+
+      <div class="card  d-flex flex-column align-items-center" style="width: 18rem;">
+      <img src="https://img.icons8.com/?size=100&id=737&format=png&color=000000"  style="width: 50px; height: 60px;" style="width: 50px;" class="card-img-top pt-4" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold fs-1 text-center">80 Tons</h5>
+        <p class="card-text">Food Waste Prevented</p>
+      </div>
+    </div>
+
+    </div>
+
+    <div id="about" class="container d-flex align-items-center flex-column pt-5">
+      <h1>How Surplus Share Works</h1>
+      <p>A simple process connecting food donors with communities in need</p>
+
+      <div class="card-section  d-flex justify-content-evenly gap-3 align-items-center flex-column flex-lg-row pt-5 pb-5">
+        <div class="card bg-success text-white">
+          <div class="num bg-light text-dark mt-3 ms-3 pt-1 pb-1 ps-2 pe-2 rounded-circle" style="width: fit-content;">1</div>
+          <div class="card-body">
+            <div class="card-title fw-bold">Report Surplus Food</div>
+            <div class="card-text">Businesses report available surplus food through our simple online form or mobile app.</div>
+          </div>
+        </div>
+
+       <div class="card bg-success text-white">
+          <div class="num bg-light text-dark mt-3 ms-3 pt-1 pb-1 ps-2 pe-2 rounded-circle" style="width: fit-content;">2</div>
+          <div class="card-body">
+            <div class="card-title fw-bold">We Verify & Match</div>
+            <div class="card-text">Our system verifies food safety and matches with nearby NGOs based on current needs.</div>
+          </div>
+        </div>
+
+       <div class="card bg-success text-white">
+          <div class="num bg-light text-dark mt-3 ms-3 pt-1 pb-1 ps-2 pe-2 rounded-circle" style="width: fit-content;">3</div>
+          <div class="card-body">
+            <div class="card-title fw-bold">Quick Pickup</div>
+            <div class="card-text">Trained volunteers from partner NGOs coordinate quick, safe pickup of the food.</div>
+          </div>
+        </div>
+
+       <div class="card bg-success text-white">
+          <div class="num bg-light text-dark mt-3 ms-3 pt-1 pb-1 ps-2 pe-2 rounded-circle" style="width: fit-content;">4</div>
+          <div class="card-body">
+            <div class="card-title fw-bold">Distribution</div>
+            <div class="card-text">Food is distributed to people in need through schools, shelters, and community centers.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <div class="caurosel-section d-flex align-items-center flex-column py-5" id="impact">
+
+  <h1 class="text-center mb-3">Our Impact</h1>
+  <p class="text-center mb-5">Real change happening in real communities</p>
+
+  <div id="carouselExample" class="carousel slide w-100" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="d-flex flex-column flex-lg-row align-items-center bg-dark p-3">
+          <img src="./images/img2.jpg" class="img-fluid w-100 w-lg-50 rounded" style="max-height: 300px; object-fit: cover;" alt="...">
+          <div class="text w-100 w-lg-50 bg-secondary text-white d-flex flex-column align-items-center justify-content-center p-3">
+            <p class="fs-3 fw-bold text-light">Lives Touched</p>
+            <h1 class="fs-1 text-success-emphasis fw-bold">2500+</h1>
+            <p class="text-center">People receiving regular meals through our network</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="d-flex flex-column flex-lg-row align-items-center bg-dark p-3">
+          <img src="./images/img7.jpg" class="img-fluid w-100 w-lg-50 rounded" style="max-height: 300px; object-fit: cover;" alt="...">
+          <div class="text w-100 w-lg-50 bg-secondary text-white d-flex flex-column align-items-center justify-content-center p-3">
+            <p class="fs-3 fw-bold text-light">Environmental Impact</p>
+            <h1 class="fs-1 text-success-emphasis fw-bold">95%</h1>
+            <p class="text-center">Reduction in food waste across partner businesses</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="d-flex flex-column flex-lg-row align-items-center bg-dark p-3">
+          <img src="./images/img6.jpg" class="img-fluid w-100 w-lg-50 rounded" style="max-height: 300px; object-fit: cover;" alt="...">
+          <div class="text w-100 w-lg-50 bg-secondary text-white d-flex flex-column align-items-center justify-content-center p-3">
+            <p class="fs-3 fw-bold text-light">Volunteer Hours</p>
+            <h1 class="fs-1 text-success-emphasis fw-bold">500+</h1>
+            <p class="text-center">Donated by our community volunteers</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+</div>
+
+
+  <div id="faq" class="d-flex align-items-center flex-column py-5 text-center">
+
+    <h1>Frequently Asked Questions</h1>
+    <p>Everything you need to know about Surplus Share</p>
+
+    <div class="accordion container" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+           <strong> How can Business donate surplus food?</strong>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Restaurants, grocery stores, food producers, and caterers can register on our platform and report available surplus food. We provide training on food safety standards and connect them with nearby NGOs for pickup.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+           <strong> Is the donated food safe to consume?</strong>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Yes, all donations must meet food safety standards. We verify that food has been stored properly, is within expiry dates, and complies with local food safety regulations. Partner NGOs are trained in food handling protocols.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+           <strong> Where does donation money go?</strong>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            100% of donations support program operations: volunteer coordination, logistics, app development, NGO training, and expansion to new cities. We maintain complete financial transparency with annual impact reports.
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<footer class="bg-dark text-light py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    
+    <p class="mb-2 mb-md-0">&copy; 2024 FoodShare. All rights reserved.</p>
+    
+    <ul class="list-unstyled d-flex mb-0">
+      <li class="me-3"><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+      <li class="me-3"><a href="#" class="text-light text-decoration-none">Terms of Service</a></li>
+      <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+    </ul>
+
+  </div>
+</footer>
+
+
+    
+<script>
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      if (navbarCollapse.classList.contains('show')) {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {toggle: true});
+      }
+    });
+  });
+</script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
